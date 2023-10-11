@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/artRowImageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:contentDescription="@string/image"
+        android:src="@drawable/compose"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/artRowNameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/art_name"
+            android:textSize="28sp"
+            android:layout_marginStart="14dp"
+            android:layout_marginBottom="4dp"
+            />
+
+        <TextView
+            android:id="@+id/artistRowNameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/artist_name"
+            android:textSize="20sp"
+            android:layout_marginStart="14dp"
+            android:layout_marginBottom="4dp"
+            />
+
+        <TextView
+            android:id="@+id/yearRowNameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/year_name"
+            android:textSize="18sp"
+            android:layout_marginStart="14dp"
+            android:layout_marginBottom="4dp"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
