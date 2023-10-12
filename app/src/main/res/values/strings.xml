@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">ArtBookTestingHilt</string>
+    <string name="artadd">artAdd</string>
+    <string name="image">image</string>
+    <string name="artist_name">Artist Name</string>
+    <string name="art_name">Art Name</string>
+    <string name="year_name">Year Name</string>
+    <string name="search_image">Search Image</string>
 </resources>
