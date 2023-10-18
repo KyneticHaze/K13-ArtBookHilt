@@ -2,6 +2,7 @@ package com.example.artbooktestinghilt.repository
 
 import androidx.lifecycle.LiveData
 import com.example.artbooktestinghilt.api.RetrofitApi
+import com.example.artbooktestinghilt.di.AppModule
 import com.example.artbooktestinghilt.model.ImageResponse
 import com.example.artbooktestinghilt.roomdb.Art
 import com.example.artbooktestinghilt.roomdb.ArtDao

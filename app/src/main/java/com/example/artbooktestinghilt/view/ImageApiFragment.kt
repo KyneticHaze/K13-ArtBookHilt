@@ -67,7 +67,7 @@ class ImageApiFragment @Inject constructor(
         viewModel.imageList.observe(viewLifecycleOwner, Observer {
             when (it.status) {
                 Status.SUCCESS -> {
-                    var urls = it.data?.hits?.map { imageResult ->
+                    val urls = it.data?.hits?.map { imageResult ->
                         imageResult.previewURL
                     }
 

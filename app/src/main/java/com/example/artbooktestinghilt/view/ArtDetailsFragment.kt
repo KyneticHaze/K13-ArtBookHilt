@@ -19,7 +19,7 @@ class ArtDetailsFragment @Inject constructor(
     val glide: RequestManager
 ): Fragment(R.layout.fragment_art_details) {
 
-    private lateinit var viewModel: ArtViewModel
+    lateinit var viewModel: ArtViewModel
     private var fragmentBinding: FragmentArtDetailsBinding? = null
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -37,7 +37,9 @@ class ArtDetailsFragment @Inject constructor(
         }
 
         /**
-         * Burada bir önceki stack'e gidip ve kapatmak için bu object fonksiyonu yazdık.
+         * [OnBackPressedCallback] fonksiyonu fragmandan geriye döndüğümüzde çalışan fonksiyondur
+         *
+         * Geriye dönme fonksiyonu içinde [findNavController]'ın popBackStack fonksiyonunu yazarak stackleşen fragmanları silmiş olduk.
          */
         val callback = object : OnBackPressedCallback(true) {
             override fun handleOnBackPressed() {
@@ -46,6 +48,7 @@ class ArtDetailsFragment @Inject constructor(
             }
         }
 
+        /// View tarafında bu dokunuşun işlenmesi için izlenen adım
         requireActivity().onBackPressedDispatcher.addCallback(callback)
 
         binding.saveButton.setOnClickListener {
