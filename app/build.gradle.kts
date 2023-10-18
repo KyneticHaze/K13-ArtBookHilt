@@ -17,7 +17,8 @@ android {
         versionCode = 1
         versionName = "1.0"
 
-        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        // testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner = "com.example.artbooktestinghilt.HiltTestRunner"
     }
 
     buildTypes {
@@ -92,7 +93,7 @@ dependencies {
 
     // Android Test Implementations
     androidTestImplementation ("junit:junit:4.13.2")
-    androidTestImplementation ("org.mockito:mockito-android:4.7.0")
+    androidTestImplementation ("org.mockito:mockito-android:5.6.0")
     androidTestImplementation ("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.7.3")
     androidTestImplementation ("androidx.arch.core:core-testing:2.2.0")
     androidTestImplementation ("com.google.truth:truth:1.1.4")
