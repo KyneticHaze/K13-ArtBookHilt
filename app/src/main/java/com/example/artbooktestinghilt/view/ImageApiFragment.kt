@@ -25,7 +25,7 @@ class ImageApiFragment @Inject constructor(
     private val imageRecyclerAdapter: ImageRecyclerAdapter
 ): Fragment(R.layout.fragment_image_api) {
 
-    private lateinit var viewModel: ArtViewModel
+    lateinit var viewModel: ArtViewModel
     private var fragmentBinding: FragmentImageApiBinding? = null
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
